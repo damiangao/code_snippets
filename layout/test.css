@@ -1,0 +1,76 @@
+button {
+  padding: .3em .8em;
+  border: 1px solid rgba(0, 0, 0, .1);
+  /* linear-gradient([ [ <angle> | to <side-or-corner> ] ,]? <color-stop>[, <color-stop>]+) */
+  background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+  border-radius: .2em;
+  /* box-shadow: h-shadow水平阴影的位置。允许负值 v-shadow垂直阴影的位置。允许负值。
+   blur模糊距离。 spread阴影的尺寸。 color阴影的颜色。 inset将外部阴影 (outset) 改为内部阴影 */
+  box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+  font-size: 125%;
+  /* 字号的倍数 */
+  line-height: 1.5;
+}
+
+button.cancel {
+  background-color: #c00;
+}
+
+button.ok {
+  background-color: #6b0;
+}
+
+.red {
+  color: red;
+}
+
+hr {
+  height: .2em;
+  background: currentColor;
+  /* 获取当前文本颜色 */
+}
+
+.callout {
+  max-width: 900px;
+  position: relative;
+  border: 1px solid black;
+  background: pink;
+}
+
+.callout::before {
+  content: "";
+  position: absolute;
+  top: -.4em;
+  left: 1em;
+  padding: .35em;
+  background: inherit;
+  border: inherit;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+}
+
+.all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+
+.alpha-backgroud {
+  background: url('http://csssecrets.io/images/stone-art.jpg');
+}
+
+.content-text {
+  border: 10px solid hsla(0, 0%, 100%, .5);
+  background: white;
+  /*背景不延伸到border*/
+  background-clip: padding-box;
+  /*styling*/
+  max-width: 20em;
+  padding: 2em;
+  margin: 2em auto 0;
+  font: 100%/1.5 sans-serif;
+}
